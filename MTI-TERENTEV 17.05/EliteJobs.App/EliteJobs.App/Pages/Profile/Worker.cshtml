@@ -1,0 +1,140 @@
+﻿@page "{id?}"
+@model EliteJobs.App.Pages.Profile.WorkerModel
+@{
+    ViewData["Title"] = $"{Model.ProfileUser?.FirstName} {Model.ProfileUser?.LastName}";
+}
+
+<div class="container mt-4">
+    @if (Model.ProfileUser == null)
+    {
+        <div class="alert alert-warning">User not found.</div>
+    }
+    else
+    {
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Public Info Card -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h4>@Model.ProfileUser.FirstName @Model.ProfileUser.LastName @Model.ProfileUser.MiddleName</h4>
+                        @if (!string.IsNullOrEmpty(Model.ProfileUser.Position))
+                        {
+                            <p style="color: var(--accent-gold);">@Model.ProfileUser.Position</p>
+                        }
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            @if (!string.IsNullOrEmpty(Model.ProfileUser.City))
+                            {
+                                <div class="col-md-4 mb-3"><strong>City:</strong> @Model.ProfileUser.City</div>
+                            }
+                            @if (!string.IsNullOrEmpty(Model.ProfileUser.PhoneNumber2))
+                            {
+                                <div class="col-md-4 mb-3"><strong>Phone:</strong> @Model.ProfileUser.PhoneNumber2</div>
+                            }
+                            @if (!string.IsNullOrEmpty(Model.ProfileUser.Email))
+                            {
+                                <div class="col-md-4 mb-3"><strong>Email:</strong> @Model.ProfileUser.Email</div>
+                            }
+                            @if (!string.IsNullOrEmpty(Model.ProfileUser.Gender))
+                            {
+                                <div class="col-md-4 mb-3"><strong>Gender:</strong> @Model.ProfileUser.Gender</div>
+                            }
+                            @if (Model.ProfileUser.BirthDate.HasValue)
+                            {
+                                var age = DateTime.UtcNow.Year - Model.ProfileUser.BirthDate.Value.Year;
+                                <div class="col-md-4 mb-3"><strong>Age:</strong> @age</div>
+                            }
+                            @if (!string.IsNullOrEmpty(Model.ProfileUser.MaritalStatus))
+                            {
+                                <div class="col-md-4 mb-3"><strong>Status:</strong> @Model.ProfileUser.MaritalStatus</div>
+                            }
+                            @if (!string.IsNullOrEmpty(Model.ProfileUser.Citizenship))
+                            {
+                                <div class="col-md-4 mb-3"><strong>Citizenship:</strong> @Model.ProfileUser.Citizenship</div>
+                            }
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Услуги пользователя -->
+                <h4 style="color: var(--accent-gold);">Services</h4>
+                @if (!Model.MyServices.Any())
+                {
+                    <p class="text-muted">No services posted.</p>
+                }
+                else
+                {
+                    @foreach (var service in Model.MyServices)
+                    {
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <h5><a asp-page="/Details" asp-route-id="@service.Id">@service.Title</a></h5>
+                                <span class="price-tag me-2">@service.Price</span>
+                                <span class="badge" style="background: var(--accent);">@service.ProviderType</span>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                @if (Model.IsOwner)
+                {
+                    <div class="card mb-3">
+                        <div class="card-header"><h5>My Profile</h5></div>
+                        <div class="card-body">
+                            <a asp-page="/Profile/WorkerEdit" class="btn btn-outline-primary w-100 mb-2">Edit Profile</a>
+                            <a asp-page="/Create" class="btn btn-primary w-100">✦ Post Service</a>
+                        </div>
+                    </div>
+                }
+
+                <div class="card mb-3">
+                    <div class="card-header"><h5>Roles</h5></div>
+                    <div class="card-body">
+                        @foreach (var id in Model.CurrentRoleIds)
+                        {
+                            <div style="background: #8b0000; color: white; padding: 8px; margin-bottom: 5px; font-size: 14px;">
+                                @switch (id)
+                                {
+                                    case 1:
+                                        <text>🔍 Customer (person)</text>
+                                        break;
+                                    case 2:
+
+                                        <text>💼 Provider (person)</text>
+                                        break;
+                                    case 3:
+
+                                        <text>🏢 Customer (company)</text>
+                                        break;
+                                    case 4:
+
+                                        <text>🏭 Provider (company)</text>
+                                        break;
+                                }
+                            </div>
+                        }
+                        @if (Model.IsOwner)
+                        {
+                            <a asp-page="/Profile/AddRole" style="color: #a00000; display: block; margin-top: 10px;">+ Add role</a>
+                        }
+                    </div>
+                </div>
+
+                @if (Model.IsOwner)
+                {
+                    <div class="card">
+                        <div class="card-header"><h5>Security</h5></div>
+                        <div class="card-body">
+                            <a asp-page="/Profile/LinkGoogle" class="btn btn-outline-primary btn-sm w-100 mb-2">🅶 Link Google</a>
+                            <a asp-page="/Profile/Enable2FA" class="btn btn-outline-primary btn-sm w-100">🔐 2FA Settings</a>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+</div>

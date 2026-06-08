@@ -1,0 +1,87 @@
+﻿@page
+@model EliteJobs.App.Pages.Account.LoginModel
+@{
+    ViewData["Title"] = "Вход";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card" style="border: 1px solid var(--accent);">
+                <div class="card-header text-center" style="background: linear-gradient(135deg, #0a0000, #1a0000); border-bottom: 1px solid var(--accent);">
+                    <h3 style="color: var(--accent-gold); letter-spacing: 3px; font-weight: 300;">ВХОД</h3>
+                </div>
+                <div class="card-body p-4">
+                    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+                    {
+                        <div class="alert alert-danger">@Model.ErrorMessage</div>
+                    }
+
+                    <form method="post" asp-page-handler="Login" id="loginForm" novalidate>
+                        @Html.AntiForgeryToken()
+
+                        <input type="hidden" name="recaptchaToken" id="recaptchaToken" />
+
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input name="email" class="form-control" type="email" value="@Model.EmailValue" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Пароль</label>
+                            <input name="password" class="form-control" type="password" />
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input name="rememberMe" class="form-check-input" type="checkbox" value="true" />
+                            <input type="hidden" name="rememberMe" value="false" />
+                            <label class="form-check-label">Запомнить меня</label>
+                        </div>
+
+                        <div class="mb-3 text-end">
+                            <a asp-page="/Account/ForgotPassword" style="color: var(--accent-gold); font-size: 0.85rem;">
+                                Забыли пароль?
+                            </a>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 py-2" style="font-size: 1.1rem; letter-spacing: 2px;">
+                            ✦ ВОЙТИ
+                        </button>
+                    </form>
+
+                    <hr style="border-color: var(--border); margin: 20px 0;" />
+
+                    <a href="/Account/ExternalLogin" class="btn w-100 py-2" style="background: #fff; color: #333; font-size: 1rem; text-decoration: none; display: block; text-align: center;">
+                        🅶 Войти через Google
+                    </a>
+
+                    <div class="mt-3 text-center">
+                        <p style="color: var(--text-muted);">Нет аккаунта? <a asp-page="/Account/Register" style="color: var(--accent-gold);">Регистрация</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://www.google.com/recaptcha/api.js?render=@Model.RecaptchaSiteKey"></script>
+    <script>
+        var form = document.getElementById('loginForm');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (typeof grecaptcha === 'undefined') {
+                form.submit();
+                return;
+            }
+            grecaptcha.ready(function() {
+                grecaptcha.execute('@Model.RecaptchaSiteKey', { action: 'login' }).then(function(token) {
+                    document.getElementById('recaptchaToken').value = token;
+                    form.submit();
+                }).catch(function() {
+                    form.submit();
+                });
+            });
+        });
+    </script>
+}

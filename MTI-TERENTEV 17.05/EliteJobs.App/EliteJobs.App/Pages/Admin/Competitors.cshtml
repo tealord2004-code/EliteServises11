@@ -1,0 +1,314 @@
+﻿@page
+@model EliteJobs.App.Pages.Admin.CompetitorsModel
+@{
+    ViewData["Title"] = "Аналитика рынка";
+}
+
+<div class="container mt-4">
+    <h2 style="color: var(--accent-gold); letter-spacing: 3px;">АНАЛИТИКА РЫНКА</h2>
+    <p style="color: var(--text-muted);">Сравнение с конкурентами, динамика и рекомендации</p>
+
+    <!-- KPI Карточки -->
+    <div class="row mb-4">
+        <div class="col-md-2">
+            <div class="card p-3 text-center" style="border-left: 3px solid var(--accent-green);">
+                <small style="color: var(--text-secondary);">НАШИ УСЛУГИ</small>
+                <h3 style="color: var(--accent-green);">@Model.OurServicesCount</h3>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card p-3 text-center" style="border-left: 3px solid var(--accent);">
+                <small style="color: var(--text-secondary);">РЫНОК</small>
+                <h3 style="color: var(--accent);">@Model.MarketAvgServices.ToString("N0")</h3>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card p-3 text-center" style="border-left: 3px solid var(--accent-gold);">
+                <small style="color: var(--text-secondary);">НАША ЦЕНА</small>
+                <h3 style="color: var(--accent-gold);">@Model.OurAvgPrice.ToString("N0") ₽</h3>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card p-3 text-center" style="border-left: 3px solid #666;">
+                <small style="color: var(--text-secondary);">РЫНОК ЦЕНА</small>
+                <h3 style="color: #666;">@Model.MarketAvgPrice.ToString("N0") ₽</h3>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card p-3 text-center" style="border-left: 3px solid #4488ff;">
+                <small style="color: var(--text-secondary);">ИСПОЛНИТЕЛЕЙ</small>
+                <h3 style="color: #4488ff;">@Model.OurProvidersCount</h3>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card p-3 text-center" style="border-left: 3px solid #ff8844;">
+                <small style="color: var(--text-secondary);">ИСТОЧНИКОВ</small>
+                <h3 style="color: #ff8844;">@Model.SourcesCount</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Рекомендации -->
+    @if (Model.Recommendations.Any())
+    {
+        <div class="card mb-4" style="border: 1px solid var(--accent-gold); background: #0f0a00;">
+            <div class="card-header" style="background: #1a0f00;">
+                <h5 style="color: var(--accent-gold);">💡 РЕКОМЕНДАЦИИ</h5>
+            </div>
+            <div class="card-body">
+                @foreach (var rec in Model.Recommendations)
+                {
+                    <div class="d-flex align-items-start mb-3 p-2" style="background: #111; border-radius: 4px;">
+                        <span style="font-size: 1.5rem; margin-right: 15px;">
+                            @if (rec.Type == "success")
+                            {
+                                <text>✅</text>
+                            }
+                            else if (rec.Type == "warning")
+                            {
+
+                                <text>⚠️</text>
+                            }
+                            else
+                            {
+
+                                <text>📊</text>
+                            }
+                        </span>
+                        <div>
+                            <strong style="color: @(rec.Type == "success" ? "var(--accent-green)" : rec.Type == "warning" ? "var(--accent-gold)" : "var(--text-primary)")">
+                                @rec.Title
+                            </strong>
+                            <p style="color: var(--text-secondary); margin: 5px 0;">@rec.Description</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+
+    <!-- Кнопки управления -->
+    <div class="d-flex gap-2 mb-4">
+        <form method="post" asp-page-handler="CollectAll" class="d-inline">
+            @Html.AntiForgeryToken()
+            <button class="btn btn-success">🔄 Собрать данные</button>
+        </form>
+        <form method="post" asp-page-handler="GenerateReport" class="d-inline">
+            @Html.AntiForgeryToken()
+            <button class="btn btn-outline-info">📥 Скачать отчёт</button>
+        </form>
+    </div>
+
+    <!-- График: Мы vs Конкуренты + Динамика -->
+    <div class="row mb-4">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header"><h5>📊 Мы vs Конкуренты</h5></div>
+                <div class="card-body"><canvas id="compareChart" height="80"></canvas></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header"><h5>📈 Доля рынка</h5></div>
+                <div class="card-body"><canvas id="shareChart" height="80"></canvas></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Категории и Цены -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header"><h5>🏷️ Популярность категорий</h5></div>
+                <div class="card-body"><canvas id="categoriesChart" height="60"></canvas></div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header"><h5>💰 Цены по категориям</h5></div>
+                <div class="card-body"><canvas id="pricesChart" height="60"></canvas></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Города и Исполнители -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header"><h5>🏙️ Конкуренция по городам</h5></div>
+                <div class="card-body"><canvas id="cityChart" height="60"></canvas></div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header"><h5>👥 Исполнителей по источникам</h5></div>
+                <div class="card-body"><canvas id="providersChart" height="60"></canvas></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Динамика по дням -->
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header"><h5>📅 Динамика сбора данных (последние 14 дней)</h5></div>
+                <div class="card-body"><canvas id="historyChart" height="60"></canvas></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- История запросов -->
+    <div class="card mb-4">
+        <div class="card-header"><h5>📋 История запросов</h5></div>
+        <div class="card-body" style="max-height: 400px; overflow-y: auto;">
+            <table class="table table-sm">
+                <thead>
+                    <tr><th>Дата</th><th>Источник</th><th>Категория</th><th>Услуг</th><th>Ср. цена</th><th>Город</th><th>Исп.</th></tr>
+                </thead>
+                <tbody>
+                    @foreach (var d in Model.CompetitorData.OrderByDescending(d => d.CollectedAt))
+                    {
+                        <tr>
+                            <td style="font-size:0.8rem;">@d.CollectedAt.ToString("dd.MM HH:mm")</td>
+                            <td><strong>@d.CompetitorName</strong></td>
+                            <td>@d.Category</td>
+                            <td>@d.ServicesCount.ToString("N0")</td>
+                            <td>@d.AvgPrice.ToString("N0") ₽</td>
+                            <td>@d.TopCity</td>
+                            <td>@d.ProvidersCount.ToString("N0")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Мы vs Конкуренты
+        new Chart(document.getElementById('compareChart'), {
+            type: 'bar',
+            data: {
+                labels: @Html.Raw(Json.Serialize(Model.CompareLabels)),
+                datasets: [{
+                    label: 'Количество услуг',
+                    data: @Html.Raw(Json.Serialize(Model.CompareData)),
+                    backgroundColor: ['#00cc66', '#8b0000', '#c9a84c', '#666', '#444', '#222']
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                plugins: { legend: { display: false } },
+                scales: { x: { ticks: { color: '#666' }, grid: { color: '#1a1a1a' } }, y: { ticks: { color: '#999' }, grid: { color: '#1a1a1a' } } }
+            }
+        });
+
+        // Доля рынка
+        new Chart(document.getElementById('shareChart'), {
+            type: 'doughnut',
+            data: {
+                labels: @Html.Raw(Json.Serialize(Model.ShareLabels)),
+                datasets: [{
+                    data: @Html.Raw(Json.Serialize(Model.ShareData)),
+                    backgroundColor: ['#00cc66','#8b0000','#c9a84c','#666','#444','#222']
+                }]
+            },
+            options: { plugins: { legend: { labels: { color: '#999', font: { size: 10 } } } } }
+        });
+
+        // Категории
+        new Chart(document.getElementById('categoriesChart'), {
+            type: 'doughnut',
+            data: {
+                labels: @Html.Raw(Json.Serialize(Model.CategoryLabels)),
+                datasets: [{
+                    data: @Html.Raw(Json.Serialize(Model.CategoryData)),
+                    backgroundColor: ['#8b0000','#c9a84c','#00cc66','#666','#a00000','#444','#1a1a1a','#333']
+                }]
+            },
+            options: { plugins: { legend: { labels: { color: '#999' } } } }
+        });
+
+        // Цены по категориям
+        new Chart(document.getElementById('pricesChart'), {
+            type: 'bar',
+            data: {
+                labels: @Html.Raw(Json.Serialize(Model.PriceLabels)),
+                datasets: [{
+                    label: 'Средняя цена (₽)',
+                    data: @Html.Raw(Json.Serialize(Model.PriceData)),
+                    backgroundColor: '#c9a84c'
+                }]
+            },
+            options: {
+                plugins: { legend: { display: false } },
+                scales: { x: { ticks: { color: '#666' }, grid: { color: '#1a1a1a' } }, y: { ticks: { color: '#666' }, grid: { color: '#1a1a1a' } } }
+            }
+        });
+
+        // Города
+        new Chart(document.getElementById('cityChart'), {
+            type: 'bar',
+            data: {
+                labels: @Html.Raw(Json.Serialize(Model.CityLabels)),
+                datasets: [{
+                    label: 'Услуг',
+                    data: @Html.Raw(Json.Serialize(Model.CityData)),
+                    backgroundColor: '#8b0000'
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                plugins: { legend: { display: false } },
+                scales: { x: { ticks: { color: '#666' }, grid: { color: '#1a1a1a' } }, y: { ticks: { color: '#999' }, grid: { color: '#1a1a1a' } } }
+            }
+        });
+
+        // Исполнители по источникам
+        new Chart(document.getElementById('providersChart'), {
+            type: 'bar',
+            data: {
+                labels: @Html.Raw(Json.Serialize(Model.ProvidersLabels)),
+                datasets: [{
+                    label: 'Исполнителей',
+                    data: @Html.Raw(Json.Serialize(Model.ProvidersData)),
+                    backgroundColor: ['#4488ff','#ff8844','#44ff88','#ff4488','#8844ff','#88ff44']
+                }]
+            },
+            options: {
+                plugins: { legend: { display: false } },
+                scales: { x: { ticks: { color: '#666' }, grid: { color: '#1a1a1a' } }, y: { ticks: { color: '#666' }, grid: { color: '#1a1a1a' } } }
+            }
+        });
+
+        // Динамика по дням
+        new Chart(document.getElementById('historyChart'), {
+            type: 'line',
+            data: {
+                labels: @Html.Raw(Json.Serialize(Model.HistoryLabels)),
+                datasets: [
+                    {
+                        label: 'Наша платформа',
+                        data: @Html.Raw(Json.Serialize(Model.HistoryOurData)),
+                        borderColor: '#00cc66',
+                        tension: 0.3,
+                        fill: false
+                    },
+                    {
+                        label: 'Рынок (среднее)',
+                        data: @Html.Raw(Json.Serialize(Model.HistoryMarketData)),
+                        borderColor: '#c9a84c',
+                        tension: 0.3,
+                        fill: false
+                    }
+                ]
+            },
+            options: {
+                plugins: { legend: { labels: { color: '#999' } } },
+                scales: { x: { ticks: { color: '#666' }, grid: { color: '#1a1a1a' } }, y: { ticks: { color: '#666' }, grid: { color: '#1a1a1a' } } }
+            }
+        });
+    </script>
+}

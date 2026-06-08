@@ -1,0 +1,114 @@
+﻿@page "{id:int?}"
+@model EliteJobs.App.Pages.Profile.CompanyModel
+@{
+    ViewData["Title"] = Model.Profile?.Name ?? "Профиль компании";
+}
+
+<div class="container mt-4">
+    @if (Model.Profile == null)
+    {
+        <div class="alert alert-warning">
+            <h4>Профиль не найден</h4>
+            @if (User.IsInRole("Employer"))
+            {
+                <a asp-page="/Profile/CompanyEdit" class="btn btn-primary">Создать</a>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h1>@Model.Profile.Name</h1>
+                        @if (!string.IsNullOrEmpty(Model.Profile.Industry))
+                        {
+                            <span class="badge bg-info mb-2">@Model.Profile.Industry</span>
+                        }
+                        @if (!string.IsNullOrEmpty(Model.Profile.EmploymentType))
+                        {
+                            <span class="badge bg-secondary mb-2">@Model.Profile.EmploymentType</span>
+                        }
+
+                        <hr />
+
+                        @if (!string.IsNullOrEmpty(Model.Profile.Description))
+                        {
+                            <h5>О компании</h5>
+                            <p style="white-space: pre-line;">@Model.Profile.Description</p>
+                        }
+
+                        <div class="row mt-3">
+                            @if (!string.IsNullOrEmpty(Model.Profile.Website))
+                            {
+                                <div class="col-md-6 mb-2"><strong>Сайт:</strong> <a href="@Model.Profile.Website">@Model.Profile.Website</a></div>
+                            }
+                            @if (!string.IsNullOrEmpty(Model.Profile.City))
+                            {
+                                <div class="col-md-6 mb-2"><strong>Город:</strong> @Model.Profile.City</div>
+                            }
+                            @if (!string.IsNullOrEmpty(Model.Profile.Address))
+                            {
+                                <div class="col-md-6 mb-2"><strong>Адрес:</strong> @Model.Profile.Address</div>
+                            }
+                            @if (!string.IsNullOrEmpty(Model.Profile.NearestMetro))
+                            {
+                                <div class="col-md-6 mb-2"><strong>Метро:</strong> @Model.Profile.NearestMetro</div>
+                            }
+                            @if (!string.IsNullOrEmpty(Model.Profile.PublicTransport))
+                            {
+                                <div class="col-md-6 mb-2"><strong>Транспорт:</strong> @Model.Profile.PublicTransport</div>
+                            }
+                            @if (Model.Profile.HasParking)
+                            {
+                                <div class="col-md-6 mb-2"><strong>Парковка:</strong> есть</div>
+                            }
+                            @if (!string.IsNullOrEmpty(Model.Profile.EmployeesCount))
+                            {
+                                <div class="col-md-6 mb-2"><strong>Сотрудников:</strong> @Model.Profile.EmployeesCount</div>
+                            }
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Услуги (@Model.ActiveServices.Count)</h3>
+                @if (!Model.ActiveServices.Any())
+                {
+                    <p class="text-muted">Нет активных услуг.</p>
+                }
+                else
+                {
+                    @foreach (var service in Model.ActiveServices)
+                    {
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <h5><a asp-page="/Details" asp-route-id="@service.Id">@service.Title</a></h5>
+                                @if (!string.IsNullOrEmpty(service.Price))
+                                {
+                                    <span class="badge" style="background: #1a3a1a; color: #90ee90;">@service.Price</span>
+                                }
+                                @if (!string.IsNullOrEmpty(service.City))
+                                {
+                                    <span class="text-muted ms-2">@service.City</span>
+                                }
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+
+            <div class="col-md-4">
+                @if (Model.IsOwner)
+                {
+                    <div class="card">
+                        <div class="card-body">
+                            <a asp-page="/Profile/CompanyEdit" class="btn btn-primary w-100 mb-2">Редактировать</a>
+                            <a asp-page="/Create" class="btn btn-success w-100">Добавить услугу</a>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+</div>

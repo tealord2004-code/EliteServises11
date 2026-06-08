@@ -1,0 +1,22 @@
+﻿@page
+@model EliteJobs.App.Pages.Account.BlockedModel
+@{
+    ViewData["Title"] = "Аккаунт заблокирован";
+}
+
+<div class="container mt-5 text-center">
+    <div class="card" style="max-width: 500px; margin: 0 auto; border: 2px solid var(--accent);">
+        <div class="card-body p-5">
+            <h1 style="color: var(--accent); font-size: 3rem;">🚫</h1>
+            <h3 style="color: var(--text-primary);">Аккаунт заблокирован</h3>
+            <p style="color: var(--text-secondary);">
+                @Model.Reason
+            </p>
+            <p style="color: var(--text-muted);">
+                Если вы считаете это ошибкой, обратитесь в поддержку.
+            </p>
+            <a asp-page="/Account/Support" class="btn btn-primary mt-3">Написать в поддержку</a>
+            <a asp-page="/Account/Logout" class="btn btn-secondary mt-3">Выйти</a>
+        </div>
+    </div>
+</div>

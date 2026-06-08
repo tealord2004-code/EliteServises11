@@ -1,0 +1,53 @@
+﻿@page "{serviceId:int}"
+@model EliteJobs.App.Pages.Worker.ApplyModel
+@{
+    ViewData["Title"] = "Заказать услугу";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header" style="background: var(--accent);">
+                    <h3 class="mb-0" style="color: #fff;">Заказать услугу</h3>
+                </div>
+                <div class="card-body">
+                    @if (Model.Service != null)
+                    {
+                        <h5>@Model.Service.Title</h5>
+                        @if (!string.IsNullOrEmpty(Model.Service.ProviderName))
+                        {
+                            <p style="color: var(--accent-gold);">@Model.Service.ProviderName</p>
+                        }
+                        @if (!string.IsNullOrEmpty(Model.Service.Price))
+                        {
+                            <p><span class="badge" style="background: #1a3a1a; color: #90ee90;">@Model.Service.Price</span></p>
+                        }
+                    }
+
+                    @if (Model.AlreadyOrdered)
+                    {
+                        <div class="alert alert-warning">
+                            <p>Вы уже отправили заказ на эту услугу.</p>
+                            <a asp-page="/Chat/List" class="btn btn-primary">Перейти в чаты</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <form method="post">
+                            @Html.AntiForgeryToken()
+                            <div class="mb-3">
+                                <label class="form-label">Сообщение исполнителю</label>
+                                <textarea name="message" class="form-control" rows="5"
+                                      maxlength="5000" placeholder="Опишите, что требуется..."></textarea>
+                                <small class="text-muted">Будет отправлено в чат</small>
+                            </div>
+                            <button type="submit" class="btn btn-primary">✦ Отправить заказ</button>
+                            <a asp-page="/Details" asp-route-id="@Model.ServiceId" class="btn btn-secondary">Отмена</a>
+                        </form>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

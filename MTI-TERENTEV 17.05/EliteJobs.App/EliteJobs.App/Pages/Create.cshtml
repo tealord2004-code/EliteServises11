@@ -1,0 +1,87 @@
+﻿@page
+@model EliteJobs.App.Pages.CreateModel
+@{
+    ViewData["Title"] = "Post Service";
+}
+
+<div class="container mt-4">
+    <h2 style="color: var(--accent-gold); letter-spacing: 2px;">✦ POST SERVICE</h2>
+    <hr style="border-color: var(--border);" />
+
+    <div class="row">
+        <div class="col-md-8">
+            <form method="post">
+                @Html.AntiForgeryToken()
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label class="form-label">Service Title *</label>
+                    <input asp-for="Input.Title" class="form-control" required />
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Category</label>
+                        <select asp-for="Input.Category" class="form-select">
+                            <option value="">Select...</option>
+                            <option value="IT & Development">IT & Development</option>
+                            <option value="Construction & Repair">Construction & Repair</option>
+                            <option value="Education">Education</option>
+                            <option value="Design & Creativity">Design & Creativity</option>
+                            <option value="Beauty & Health">Beauty & Health</option>
+                            <option value="Transport">Transport</option>
+                            <option value="Legal">Legal</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Provider Type</label>
+                        <select asp-for="Input.ProviderType" class="form-select">
+                            <option value="Физ. лицо">Individual</option>
+                            <option value="Юр. лицо">Company</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Your Name / Company *</label>
+                    <input asp-for="Input.ProviderName" class="form-control" required />
+                    <small style="color: var(--text-muted);">Auto-filled from your profile. You can change it.</small>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">City *</label>
+                        <input asp-for="Input.City" class="form-control" required />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Price</label>
+                        <input asp-for="Input.Price" class="form-control" placeholder="from 5 000 ₽" />
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Contacts</label>
+                    <input asp-for="Input.Contacts" class="form-control" placeholder="Phone, email or Telegram" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Description</label>
+                    <textarea asp-for="Input.Description" class="form-control" rows="5"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">✦ POST</button>
+                <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/autocomplete.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initCityAutocomplete('input[name="Input.City"]');
+        });
+    </script>
+}

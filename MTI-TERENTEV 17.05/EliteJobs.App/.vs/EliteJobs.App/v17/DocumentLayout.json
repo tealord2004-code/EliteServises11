@@ -1,0 +1,1097 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\services\\recaptchaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\services\\recaptchaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\services\\russianidentityerrordescriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\services\\russianidentityerrordescriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\services\\competitordatacollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\services\\competitordatacollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\admin\\competitors.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\admin\\competitors.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\services\\messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\services\\messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\.csproj||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\.csproj||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\elitejobs.app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\elitejobs.app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\admin\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\admin\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\admin\\dashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\admin\\dashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\admin\\competitors.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\admin\\competitors.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\admin\\analytics.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\admin\\analytics.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\admin\\analytics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\admin\\analytics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\blocked.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\blocked.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\blocked.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\blocked.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\support.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\support.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\support.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\support.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\middleware\\spamprotectionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\middleware\\spamprotectionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\services\\spamdetectorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\services\\spamdetectorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\services\\competitoranalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\services\\competitoranalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\models\\competitordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\models\\competitordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\externallogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\externallogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\profile\\upgrade.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\profile\\upgrade.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\chat\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\chat\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\adminlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\adminlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\adminlogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\adminlogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\models\\adminaccesskey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\models\\adminaccesskey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\middleware\\profilecompletionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\middleware\\profilecompletionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\profile\\upgrade.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\profile\\upgrade.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\models\\paymentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\models\\paymentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\models\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\models\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\resetpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\resetpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\forgotpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\forgotpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\profile\\worker.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\profile\\worker.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\profile\\workeredit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\profile\\workeredit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\profile\\workeredit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\profile\\workeredit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\profile\\companyedit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\profile\\companyedit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\profile\\resumeedit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\profile\\resumeedit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\accessdenied.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\accessdenied.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\profile\\addrole.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\profile\\addrole.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|c:\\users\\sparta\\desktop\\work game\\mti-terentev\\elitejobs.app\\elitejobs.app\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA48710-0493-41ED-AA94-D5F44E80B962}|EliteJobs.App\\EliteJobs.App.csproj|solutionrelative:elitejobs.app\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Messages.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Services\\Messages.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Services\\Messages.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Services\\Messages.cs",
+              "RelativeToolTip": "EliteJobs.App\\Services\\Messages.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T12:26:37.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RussianIdentityErrorDescriber.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Services\\RussianIdentityErrorDescriber.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Services\\RussianIdentityErrorDescriber.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Services\\RussianIdentityErrorDescriber.cs",
+              "RelativeToolTip": "EliteJobs.App\\Services\\RussianIdentityErrorDescriber.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowBQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T11:17:31.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": ".csproj",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\.csproj",
+              "RelativeDocumentMoniker": "EliteJobs.App\\.csproj",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\.csproj",
+              "RelativeToolTip": "EliteJobs.App\\.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwAIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-17T10:56:02.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "EliteJobs.App\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\appsettings.Development.json",
+              "RelativeToolTip": "EliteJobs.App\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-17T09:57:18.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RecaptchaService.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Services\\RecaptchaService.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Services\\RecaptchaService.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Services\\RecaptchaService.cs",
+              "RelativeToolTip": "EliteJobs.App\\Services\\RecaptchaService.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAwEQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T09:40:08.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\appsettings.json",
+              "RelativeDocumentMoniker": "EliteJobs.App\\appsettings.json",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\appsettings.json",
+              "RelativeToolTip": "EliteJobs.App\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-17T09:39:30.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Blocked.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Blocked.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\Blocked.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Blocked.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\Blocked.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T17:44:48.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Blocked.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Blocked.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\Blocked.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Blocked.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\Blocked.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-16T17:44:34.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Support.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Support.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\Support.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Support.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\Support.cshtml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T17:44:16.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Support.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Support.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\Support.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Support.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\Support.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAIBHwC8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-16T17:44:03.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SpamProtectionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Middleware\\SpamProtectionMiddleware.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Middleware\\SpamProtectionMiddleware.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Middleware\\SpamProtectionMiddleware.cs",
+              "RelativeToolTip": "EliteJobs.App\\Middleware\\SpamProtectionMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T17:43:26.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SpamDetectorService.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Services\\SpamDetectorService.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Services\\SpamDetectorService.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Services\\SpamDetectorService.cs",
+              "RelativeToolTip": "EliteJobs.App\\Services\\SpamDetectorService.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwEMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T17:43:03.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\.env",
+              "RelativeDocumentMoniker": "EliteJobs.App\\.env",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\.env",
+              "RelativeToolTip": "EliteJobs.App\\.env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T17:41:35.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CompetitorDataCollector.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Services\\CompetitorDataCollector.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Services\\CompetitorDataCollector.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Services\\CompetitorDataCollector.cs",
+              "RelativeToolTip": "EliteJobs.App\\Services\\CompetitorDataCollector.cs",
+              "ViewState": "AgIAALYAAAAAAAAAAAAkwNcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T15:53:04.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Competitors.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Admin\\Competitors.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Admin\\Competitors.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Admin\\Competitors.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Admin\\Competitors.cshtml.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAowL4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T14:08:50.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Competitors.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Admin\\Competitors.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Admin\\Competitors.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Admin\\Competitors.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Admin\\Competitors.cshtml",
+              "ViewState": "AgIAABcBAAAAAAAAAAAuwDkBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-11T14:08:24.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CompetitorAnalysisService.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Services\\CompetitorAnalysisService.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Services\\CompetitorAnalysisService.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Services\\CompetitorAnalysisService.cs",
+              "RelativeToolTip": "EliteJobs.App\\Services\\CompetitorAnalysisService.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAcwIAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T14:07:51.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CompetitorData.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Models\\CompetitorData.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Models\\CompetitorData.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Models\\CompetitorData.cs",
+              "RelativeToolTip": "EliteJobs.App\\Models\\CompetitorData.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA9wDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T14:06:23.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Analytics.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Admin\\Analytics.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Admin\\Analytics.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Admin\\Analytics.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Admin\\Analytics.cshtml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwv58AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T08:11:41.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Analytics.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Admin\\Analytics.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Admin\\Analytics.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Admin\\Analytics.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Admin\\Analytics.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAIwDwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-10T08:11:30.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAcwE8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T08:11:05.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Edit.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Edit.cshtml.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAwGYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T08:09:34.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Edit.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Edit.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Edit.cshtml",
+              "ViewState": "AgIAADgAAAAAAAAAAAAowFoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-10T08:09:24.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Chat\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Chat\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Chat\\_ViewStart.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Chat\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-09T14:17:16.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Dashboard.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Admin\\Dashboard.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Admin\\Dashboard.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Admin\\Dashboard.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Admin\\Dashboard.cshtml.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAkwHQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T14:14:28.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Admin\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAqwMUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-09T14:14:12.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "AdminLogin.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\AdminLogin.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\AdminLogin.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\AdminLogin.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\AdminLogin.cshtml.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAgwD0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T14:12:00.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "AdminLogin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\AdminLogin.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\AdminLogin.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\AdminLogin.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\AdminLogin.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAUwDQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-09T14:11:27.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "AdminAccessKey.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Models\\AdminAccessKey.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Models\\AdminAccessKey.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Models\\AdminAccessKey.cs",
+              "RelativeToolTip": "EliteJobs.App\\Models\\AdminAccessKey.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T14:10:47.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "PaymentRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Models\\PaymentRequest.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Models\\PaymentRequest.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Models\\PaymentRequest.cs",
+              "RelativeToolTip": "EliteJobs.App\\Models\\PaymentRequest.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAABMwCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T12:10:42.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAAIcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T18:29:27.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ResetPassword.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAiwDwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T18:25:54.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\ResetPassword.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\ResetPassword.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwCcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-06T18:25:43.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ForgotPassword.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAUwDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T18:25:24.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\Logout.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\Logout.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T18:25:01.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Logout.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\Logout.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Logout.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\Logout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-06T18:24:44.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EliteJobs.App.csproj",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\EliteJobs.App.csproj",
+              "RelativeDocumentMoniker": "EliteJobs.App\\EliteJobs.App.csproj",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\EliteJobs.App.csproj",
+              "RelativeToolTip": "EliteJobs.App\\EliteJobs.App.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-06T18:21:10.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\ForgotPassword.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\ForgotPassword.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwCQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-06T18:20:31.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "EliteJobs.App\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "EliteJobs.App\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAPgAAAAAAAAAAAAmwB4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-06T18:01:37.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAUwD4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T18:01:21.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAwIEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-06T18:01:03.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAwFYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-06T18:00:28.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Dockerfile",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Dockerfile",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Dockerfile",
+              "RelativeToolTip": "EliteJobs.App\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-06T17:57:52.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\docker-compose.yml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\docker-compose.yml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\docker-compose.yml",
+              "RelativeToolTip": "EliteJobs.App\\docker-compose.yml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAUwDcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-05-06T17:57:42.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Index.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-05T20:35:12.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAkwF8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-05T20:34:14.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Upgrade.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Profile\\Upgrade.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Profile\\Upgrade.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Profile\\Upgrade.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Profile\\Upgrade.cshtml.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAQwIYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T20:25:13.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Upgrade.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Profile\\Upgrade.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Profile\\Upgrade.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Profile\\Upgrade.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Profile\\Upgrade.cshtml",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAIwJQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-05T20:25:03.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Admin\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Admin\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Admin\\Index.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Admin\\Index.cshtml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAmwMEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T20:21:49.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Admin\\Index.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAQwLAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-05T20:21:36.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "EliteJobs.App\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwBwAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T20:19:21.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Subscription.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Models\\Subscription.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Models\\Subscription.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Models\\Subscription.cs",
+              "RelativeToolTip": "EliteJobs.App\\Models\\Subscription.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T20:19:02.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Details.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Details.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Details.cshtml",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAmwGMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-05T19:53:52.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Create.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Create.cshtml.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAiwC0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T19:32:17.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Create.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Create.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Create.cshtml",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAwEAAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-05T19:31:44.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Worker.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Profile\\Worker.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Profile\\Worker.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Profile\\Worker.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Profile\\Worker.cshtml",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAwwIsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-05T19:30:35.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "WorkerEdit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Profile\\WorkerEdit.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Profile\\WorkerEdit.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Profile\\WorkerEdit.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Profile\\WorkerEdit.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAmwHAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-05T19:30:06.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "WorkerEdit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Profile\\WorkerEdit.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Profile\\WorkerEdit.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Profile\\WorkerEdit.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Profile\\WorkerEdit.cshtml.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAswEQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T10:48:53.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "CompanyEdit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Profile\\CompanyEdit.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Profile\\CompanyEdit.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Profile\\CompanyEdit.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Profile\\CompanyEdit.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T10:48:16.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "ResumeEdit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Profile\\ResumeEdit.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Profile\\ResumeEdit.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Profile\\ResumeEdit.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Profile\\ResumeEdit.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T10:47:48.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Program.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Program.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Program.cs",
+              "RelativeToolTip": "EliteJobs.App\\Program.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAALIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T10:41:07.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "AccessDenied.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\AccessDenied.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\AccessDenied.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\AccessDenied.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\AccessDenied.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T10:40:40.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-05T10:40:20.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "AddRole.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Profile\\AddRole.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Profile\\AddRole.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Profile\\AddRole.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Profile\\AddRole.cshtml.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAowGUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T10:29:33.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ProfileCompletionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Middleware\\ProfileCompletionMiddleware.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Middleware\\ProfileCompletionMiddleware.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Middleware\\ProfileCompletionMiddleware.cs",
+              "RelativeToolTip": "EliteJobs.App\\Middleware\\ProfileCompletionMiddleware.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAcwGoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T10:29:09.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ExternalLogin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\ExternalLogin.cshtml",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\ExternalLogin.cshtml",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\ExternalLogin.cshtml",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\ExternalLogin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-05T10:10:39.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "ExternalLogin.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "RelativeDocumentMoniker": "EliteJobs.App\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "ToolTip": "C:\\Users\\Sparta\\Desktop\\Work Game\\MTI-TERENTEV\\EliteJobs.App\\EliteJobs.App\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "RelativeToolTip": "EliteJobs.App\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAADwv6AAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T10:06:11.893Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

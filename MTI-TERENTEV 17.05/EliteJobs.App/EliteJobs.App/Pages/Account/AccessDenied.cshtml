@@ -1,0 +1,16 @@
+﻿@page
+@model EliteJobs.App.Pages.Account.AccessDeniedModel
+@{
+    ViewData["Title"] = "Access Denied";
+}
+
+<div class="container mt-5 text-center">
+    <div class="card" style="border: 1px solid var(--accent); max-width: 500px; margin: 0 auto;">
+        <div class="card-body p-5">
+            <h1 style="color: var(--accent); font-size: 3rem;">403</h1>
+            <h3 style="color: var(--text-primary);">Access Denied</h3>
+            <p style="color: var(--text-secondary);">You don't have permission to access this page.</p>
+            <a asp-page="/Index" class="btn btn-primary mt-3">Back to Home</a>
+        </div>
+    </div>
+</div>

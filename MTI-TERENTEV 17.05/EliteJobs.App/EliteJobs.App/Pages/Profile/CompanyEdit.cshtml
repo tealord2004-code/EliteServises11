@@ -1,0 +1,160 @@
+﻿@page
+@model EliteJobs.App.Pages.Profile.CompanyEditModel
+@{
+    ViewData["Title"] = "Редактирование профиля компании";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0">Профиль компании</h3>
+                </div>
+                <div class="card-body">
+                    <form method="post" id="companyForm">
+                        @Html.AntiForgeryToken()
+                        <div asp-validation-summary="All" class="text-danger"></div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Название *</label>
+                            <input asp-for="Input.Name" class="form-control" required />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Описание</label>
+                            <textarea asp-for="Input.Description" class="form-control" rows="5" maxlength="5000"></textarea>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Сайт</label>
+                                <input asp-for="Input.Website" class="form-control" />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Отрасль</label>
+                                <input asp-for="Input.Industry" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Город * (только из списка)</label>
+                                <input asp-for="Input.City" class="form-control" required
+                                       onchange="onCityChange()" data-city-input="true" />
+                                <div class="invalid-feedback" id="cityError" style="display:none;">
+                                    Нужно выбрать город из выпадающего списка
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Адрес</label>
+                                <input asp-for="Input.Address" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="row" id="metroSection">
+                            <div class="col-md-6 mb-3" id="metroField">
+                                <label class="form-label">Ближайшее метро</label>
+                                <input asp-for="Input.NearestMetro" class="form-control"
+                                       placeholder="м. Курская" />
+                            </div>
+                            <div class="col-md-6 mb-3" id="transportField" style="display:none;">
+                                <label class="form-label">Остановка / Общественный транспорт</label>
+                                <input asp-for="Input.PublicTransport" class="form-control"
+                                       placeholder="Автобус 15, 22 или ост. Центральная" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Сотрудников</label>
+                                <select asp-for="Input.EmployeesCount" class="form-select">
+                                    <option value="">Выберите...</option>
+                                    <option value="1-10">1-10</option>
+                                    <option value="11-50">11-50</option>
+                                    <option value="51-200">51-200</option>
+                                    <option value="201-1000">201-1000</option>
+                                    <option value="1000+">1000+</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Тип занятости</label>
+                                <select asp-for="Input.EmploymentType" class="form-select">
+                                    <option value="">Выберите...</option>
+                                    <option value="Офис">Офис</option>
+                                    <option value="Гибрид">Гибрид</option>
+                                    <option value="Удалённо">Удалённо</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input asp-for="Input.HasParking" class="form-check-input" />
+                            <label class="form-check-label">Есть парковка</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Сохранить</button>
+                        <a asp-page="/Profile/Company" class="btn btn-secondary">Отмена</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/autocomplete.js"></script>
+    <script>
+        // Список городов с метро
+        var citiesWithMetro = ['Москва', 'Санкт-Петербург', 'Казань', 'Нижний Новгород',
+                               'Новосибирск', 'Екатеринбург', 'Самара', 'Минск'];
+
+        document.addEventListener('DOMContentLoaded', function() {
+            initCityAutocomplete('input[name="Input.City"]');
+            onCityChange();
+        });
+
+        function onCityChange() {
+            var city = document.querySelector('input[name="Input.City"]').value.trim();
+            var metroField = document.getElementById('metroField');
+            var transportField = document.getElementById('transportField');
+
+            if (citiesWithMetro.includes(city)) {
+                metroField.style.display = 'block';
+                transportField.style.display = 'none';
+            } else if (city.length > 0) {
+                metroField.style.display = 'none';
+                transportField.style.display = 'block';
+            } else {
+                metroField.style.display = 'none';
+                transportField.style.display = 'none';
+            }
+        }
+
+        // Проверка при отправке формы
+        document.getElementById('companyForm').addEventListener('submit', function(e) {
+            var cityInput = document.querySelector('input[name="Input.City"]');
+            var cityError = document.getElementById('cityError');
+
+            if (cityInput.value.trim().length === 0) {
+                return; // Required сработает
+            }
+
+            // Проверяем, что город из списка
+            fetch('/api/directory/cities?q=' + encodeURIComponent(cityInput.value.trim()))
+                .then(r => r.json())
+                .then(data => {
+                    var found = data.some(item => item.name.toLowerCase() === cityInput.value.trim().toLowerCase());
+                    if (!found) {
+                        e.preventDefault();
+                        cityInput.classList.add('is-invalid');
+                        cityError.style.display = 'block';
+                        cityError.textContent = 'Город "' + cityInput.value + '" не найден в списке. Выберите из подсказок.';
+                    } else {
+                        cityInput.classList.remove('is-invalid');
+                        cityError.style.display = 'none';
+                    }
+                });
+        });
+    </script>
+}

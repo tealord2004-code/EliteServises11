@@ -1,0 +1,98 @@
+﻿@page
+@model EliteJobs.App.Pages.Search.CandidatesModel
+@{
+    ViewData["Title"] = "Поиск кандидатов";
+}
+
+<div class="container mt-4">
+    <h2>Поиск кандидатов</h2>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <form method="get" class="row g-3">
+                <div class="col-md-4">
+                    <label class="form-label">Ключевые слова</label>
+                    <input name="query" class="form-control" value="@Model.Query" placeholder="Должность, навыки..." />
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Город</label>
+                    <input name="city" class="form-control" value="@Model.City" placeholder="Москва" />
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Тип занятости</label>
+                    <select name="employmentType" class="form-select">
+                        <option value="">Любой</option>
+                        <option value="Полная">Полная</option>
+                        <option value="Частичная">Частичная</option>
+                        <option value="Проектная">Проектная</option>
+                        <option value="Удалённый">Удалённый</option>
+                    </select>
+                </div>
+                <div class="col-md-2 d-flex align-items-end">
+                    <button type="submit" class="btn btn-primary w-100">Искать</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <p>Найдено: @Model.Results.Count</p>
+
+    @if (!Model.Results.Any())
+    {
+        <div class="alert alert-info">Ничего не найдено.</div>
+    }
+    else
+    {
+        @foreach (var resume in Model.Results)
+        {
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h5>
+                                <a asp-page="/Profile/Worker" asp-route-id="@resume.WorkerId">
+                                    @resume.Worker?.LastName @resume.Worker?.FirstName
+                                </a>
+                            </h5>
+                            <h6 class="text-primary">@resume.DesiredPosition</h6>
+                        </div>
+                        @if (!string.IsNullOrEmpty(resume.DesiredSalary))
+                        {
+                            <span class="badge bg-success fs-6">@resume.DesiredSalary</span>
+                        }
+                    </div>
+
+                    @if (!string.IsNullOrEmpty(resume.Skills))
+                    {
+                        <p class="mt-2">
+                            @foreach (var skill in resume.Skills.Split(','))
+                            {
+                                <span class="badge bg-light text-dark me-1">@skill.Trim()</span>
+                            }
+                        </p>
+                    }
+
+                    <div class="d-flex gap-2">
+                        @if (!string.IsNullOrEmpty(resume.City))
+                        {
+                            <span class="badge bg-secondary">@resume.City</span>
+                        }
+                        @if (resume.ReadyForRemote)
+                        {
+                            <span class="badge bg-success">Удалённо</span>
+                        }
+                        @if (resume.HasCar)
+                        {
+                            <span class="badge bg-primary">Есть авто</span>
+                        }
+                    </div>
+
+                    <div class="mt-2">
+                        <a asp-page="/Profile/Worker" asp-route-id="@resume.WorkerId" class="btn btn-sm btn-outline-primary">Профиль</a>
+                        <a asp-page="/Chat/Index" asp-route-userId="@resume.WorkerId" class="btn btn-sm btn-primary">Написать</a>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>

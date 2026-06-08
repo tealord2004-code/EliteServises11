@@ -1,0 +1,113 @@
+﻿@page
+@model EliteJobs.App.Pages.Profile.AddRoleModel
+@{
+    ViewData["Title"] = "Add Role";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card" style="border: 1px solid var(--accent);">
+                <div class="card-header text-center">
+                    <h3 style="color: var(--accent-gold); letter-spacing: 3px; font-weight: 300;">ADD ROLE</h3>
+                </div>
+                <div class="card-body p-4">
+                    @if (!string.IsNullOrEmpty(Model.Message))
+                    {
+                        <div class="alert @(Model.Success ? "alert-success" : "alert-danger")">@Model.Message</div>
+                    }
+
+                    <div class="mb-4">
+                        <p style="color: var(--text-secondary);">Your current roles:</p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            @foreach (var id in Model.CurrentRoleIds)
+                            {
+                                <div style="background: #8b0000; color: white; padding: 6px 14px; font-size: 14px;">
+                                    @switch (id)
+                                    {
+                                        case 1:
+                                            <text>Customer (person)</text>
+                                            break;
+                                        case 2:
+
+                                            <text>Provider (person)</text>
+                                            break;
+                                        case 3:
+
+                                            <text>Customer (company)</text>
+                                            break;
+                                        case 4:
+
+                                            <text>Provider (company)</text>
+                                            break;
+                                    }
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+                    <hr style="border-color: var(--border);" />
+
+                    <form method="post">
+                        @Html.AntiForgeryToken()
+                        <p style="color: var(--accent-gold); text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; margin-bottom: 1rem;">
+                            Select role to add
+                        </p>
+
+                        <div class="row mb-4">
+                            @{
+                                var roleCards = new (int Id, string Icon, string Title)[]
+                                {
+                                                        (1, "🔍", "Customer (person)"),
+                                                        (2, "💼", "Provider (person)"),
+                                                        (3, "🏢", "Customer (company)"),
+                                                        (4, "🏭", "Provider (company)")
+                                };
+                            }
+                            @foreach (var card in roleCards)
+                            {
+                                var isAvailable = Model.AvailableRoleIds.Contains(card.Id);
+                                <div class="col-md-6 mb-3">
+                                    <div class="role-card card p-3 @(isAvailable ? "" : "selected")"
+                                         data-role="@card.Id"
+                                         style="height: 100%; @(isAvailable ? "cursor: pointer;" : "opacity: 0.5;")"
+                                         onclick="@(isAvailable ? "selectRole(this, " + card.Id + ")" : "")">
+                                        <h5 style="color: var(--text-primary); margin-bottom: 0.3rem;">@card.Icon @card.Title</h5>
+                                        @if (!isAvailable)
+                                        {
+                                            <small style="color: var(--accent-gold);">Already assigned</small>
+                                        }
+                                    </div>
+                                </div>
+                            }
+                        </div>
+
+                        <input type="hidden" name="newRole" id="selectedRoleInput" value="" />
+
+                        <button type="submit" id="submitBtn" class="btn btn-primary w-100 py-2"
+                                style="font-size: 1.1rem; letter-spacing: 2px;" disabled>
+                            ✦ ADD ROLE
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function selectRole(element, roleId) {
+            document.querySelectorAll('.role-card').forEach(c => {
+                c.classList.remove('selected');
+                c.style.border = '2px solid #1a1a1a';
+                c.style.boxShadow = 'none';
+            });
+            element.classList.add('selected');
+            element.style.border = '2px solid #8b0000';
+            element.style.boxShadow = '0 0 30px rgba(139,0,0,0.5)';
+            document.getElementById('selectedRoleInput').value = roleId;
+            document.getElementById('submitBtn').disabled = false;
+        }
+    </script>
+}

@@ -1,0 +1,61 @@
+﻿@page
+@model EliteJobs.App.Pages.Admin.AnalyticsModel
+@{
+    ViewData["Title"] = "Аналитика";
+}
+
+<div class="container mt-4">
+    <h2 style="color: var(--accent-gold);">АНАЛИТИКА И СРАВНЕНИЕ</h2>
+
+    <!-- Метрики -->
+    <div class="row mb-4">
+        <div class="col-md-3"><div class="card p-3 text-center"><h3 style="color:var(--accent-gold);">@Model.TotalServices</h3><p>Всего услуг</p></div></div>
+        <div class="col-md-3"><div class="card p-3 text-center"><h3 style="color:var(--accent-green);">@Model.ActiveServices</h3><p>Активных</p></div></div>
+        <div class="col-md-3"><div class="card p-3 text-center"><h3 style="color:#666;">@Model.AvgPrice ₽</h3><p>Средняя цена</p></div></div>
+        <div class="col-md-3"><div class="card p-3 text-center"><h3 style="color:var(--accent);">@Model.TopCity</h3><p>Топ город</p></div></div>
+    </div>
+
+    <!-- Графики -->
+    <div class="row">
+        <div class="col-md-6"><div class="card"><div class="card-header">Категории</div><div class="card-body"><canvas id="catChart"></canvas></div></div></div>
+        <div class="col-md-6"><div class="card"><div class="card-header">По городам</div><div class="card-body"><canvas id="cityChart"></canvas></div></div></div>
+        <div class="col-md-6 mt-3"><div class="card"><div class="card-header">Активность по дням</div><div class="card-body"><canvas id="dailyChart"></canvas></div></div></div>
+        <div class="col-md-6 mt-3"><div class="card"><div class="card-header">Типы исполнителей</div><div class="card-body"><canvas id="typeChart"></canvas></div></div></div>
+    </div>
+
+    <!-- Отчёт -->
+    <div class="card mt-3">
+        <div class="card-header d-flex justify-content-between">
+            <h5>Генерация отчёта</h5>
+            <form method="post" asp-page-handler="Export">
+                <button class="btn btn-primary btn-sm">📥 Скачать CSV</button>
+            </form>
+        </div>
+        <div class="card-body">
+            <table class="table table-sm">
+                <thead><tr><th>Категория</th><th>Услуг</th><th>Средняя цена</th><th>Активных</th></tr></thead>
+                <tbody>
+                    @foreach (var r in Model.Report)
+                    {
+                        <tr>
+                            <td>@r.Category</td>
+                            <td>@r.Count</td>
+                            <td>@r.AvgPrice ₽</td>
+                            <td>@r.ActiveCount</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        new Chart(document.getElementById('catChart'), { type: 'bar', data: { labels: @Html.Raw(Json.Serialize(Model.CatLabels)), datasets: [{ data: @Html.Raw(Json.Serialize(Model.CatData)), backgroundColor: '#8b0000' }] }, options: { plugins: { legend: { display: false } }, scales: { x: { ticks: { color: '#666' } }, y: { ticks: { color: '#666' } } } } });
+        new Chart(document.getElementById('cityChart'), { type: 'bar', data: { labels: @Html.Raw(Json.Serialize(Model.CityLabels)), datasets: [{ data: @Html.Raw(Json.Serialize(Model.CityData)), backgroundColor: '#c9a84c' }] }, options: { plugins: { legend: { display: false } }, scales: { x: { ticks: { color: '#666' } }, y: { ticks: { color: '#666' } } } } });
+        new Chart(document.getElementById('dailyChart'), { type: 'line', data: { labels: @Html.Raw(Json.Serialize(Model.DailyLabels)), datasets: [{ data: @Html.Raw(Json.Serialize(Model.DailyData)), borderColor: '#00cc66', fill: false }] }, options: { plugins: { legend: { display: false } }, scales: { x: { ticks: { color: '#666' } }, y: { ticks: { color: '#666' } } } } });
+        new Chart(document.getElementById('typeChart'), { type: 'doughnut', data: { labels: ['Физ. лица','Юр. лица'], datasets: [{ data: [@Model.IndividualCount, @Model.CompanyCount], backgroundColor: ['#8b0000','#c9a84c'] }] }, options: { plugins: { legend: { labels: { color: '#999' } } } } });
+    </script>
+}

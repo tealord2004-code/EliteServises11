@@ -1,0 +1,198 @@
+﻿@page
+@model EliteJobs.App.Pages.Admin.DashboardModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container mt-4">
+    <h2 style="color: var(--accent-gold); letter-spacing: 3px;">DASHBOARD</h2>
+    <p style="color: var(--text-muted);">Welcome, Administrator</p>
+
+    <!-- Статистика -->
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div class="card text-center p-3" style="border-left: 3px solid var(--accent);">
+                <h3 style="color: var(--accent-gold);">@Model.TotalUsers</h3>
+                <p style="color: var(--text-secondary);">Total Users</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center p-3" style="border-left: 3px solid var(--accent-green);">
+                <h3 style="color: var(--accent-green);">@Model.ActiveUsers</h3>
+                <p style="color: var(--text-secondary);">Active Today</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center p-3" style="border-left: 3px solid #c9a84c;">
+                <h3 style="color: #c9a84c;">@Model.TotalServices</h3>
+                <p style="color: var(--text-secondary);">Total Services</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center p-3" style="border-left: 3px solid #666;">
+                <h3 style="color: #666;">@Model.PendingPayments</h3>
+                <p style="color: var(--text-secondary);">Pending Payments</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- График услуг по дням -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header"><h5>Services Posted (Last 7 days)</h5></div>
+                <div class="card-body">
+                    <canvas id="servicesChart" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- График регистраций -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header"><h5>New Users (Last 7 days)</h5></div>
+                <div class="card-body">
+                    <canvas id="usersChart" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- График платежей -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header"><h5>Payments (Last 7 days)</h5></div>
+                <div class="card-body">
+                    <canvas id="paymentsChart" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Топ категорий -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header"><h5>Top Categories</h5></div>
+                <div class="card-body">
+                    <canvas id="categoriesChart" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Последние действия -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header"><h5>Recent Users</h5></div>
+                <div class="card-body">
+                    @foreach (var user in Model.RecentUsers)
+                    {
+                        <div class="d-flex justify-content-between mb-2 p-2" style="background: #111; border-radius: 4px;">
+                            <span>@user.Name</span>
+                            <span style="color: var(--text-muted);">@user.Date.ToString("dd.MM HH:mm")</span>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header"><h5>Recent Payments</h5></div>
+                <div class="card-body">
+                    @foreach (var p in Model.RecentPayments)
+                    {
+                        <div class="d-flex justify-content-between mb-2 p-2" style="background: #111; border-radius: 4px;">
+                            <span>@p.UserName - @p.Tier</span>
+                            <span style="color: @(p.Status == "Confirmed" ? "var(--accent-green)" : "var(--accent-gold)");">@p.Amount ₽ @p.Status</span>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Services chart
+        new Chart(document.getElementById('servicesChart'), {
+            type: 'line',
+            data: {
+                labels: @Html.Raw(Json.Serialize(Model.ServicesChartLabels)),
+                datasets: [{
+                    label: 'Services',
+                    data: @Html.Raw(Json.Serialize(Model.ServicesChartData)),
+                    borderColor: '#8b0000',
+                    backgroundColor: 'rgba(139,0,0,0.1)',
+                    fill: true,
+                    tension: 0.3
+                }]
+            },
+            options: {
+                plugins: { legend: { labels: { color: '#999' } } },
+                scales: {
+                    x: { ticks: { color: '#666' }, grid: { color: '#1a1a1a' } },
+                    y: { ticks: { color: '#666', beginAtZero: true }, grid: { color: '#1a1a1a' } }
+                }
+            }
+        });
+
+        // Users chart
+        new Chart(document.getElementById('usersChart'), {
+            type: 'bar',
+            data: {
+                labels: @Html.Raw(Json.Serialize(Model.UsersChartLabels)),
+                datasets: [{
+                    label: 'New Users',
+                    data: @Html.Raw(Json.Serialize(Model.UsersChartData)),
+                    backgroundColor: '#c9a84c'
+                }]
+            },
+            options: {
+                plugins: { legend: { labels: { color: '#999' } } },
+                scales: {
+                    x: { ticks: { color: '#666' }, grid: { color: '#1a1a1a' } },
+                    y: { ticks: { color: '#666', beginAtZero: true }, grid: { color: '#1a1a1a' } }
+                }
+            }
+        });
+
+        // Payments chart
+        new Chart(document.getElementById('paymentsChart'), {
+            type: 'line',
+            data: {
+                labels: @Html.Raw(Json.Serialize(Model.PaymentsChartLabels)),
+                datasets: [{
+                    label: 'Payments (₽)',
+                    data: @Html.Raw(Json.Serialize(Model.PaymentsChartData)),
+                    borderColor: '#00cc66',
+                    backgroundColor: 'rgba(0,204,102,0.1)',
+                    fill: true,
+                    tension: 0.3
+                }]
+            },
+            options: {
+                plugins: { legend: { labels: { color: '#999' } } },
+                scales: {
+                    x: { ticks: { color: '#666' }, grid: { color: '#1a1a1a' } },
+                    y: { ticks: { color: '#666', beginAtZero: true }, grid: { color: '#1a1a1a' } }
+                }
+            }
+        });
+
+        // Categories chart
+        new Chart(document.getElementById('categoriesChart'), {
+            type: 'doughnut',
+            data: {
+                labels: @Html.Raw(Json.Serialize(Model.CategoriesLabels)),
+                datasets: [{
+                    data: @Html.Raw(Json.Serialize(Model.CategoriesData)),
+                    backgroundColor: ['#8b0000','#c9a84c','#00cc66','#666','#444','#a00000','#1a1a1a','#333']
+                }]
+            },
+            options: {
+                plugins: { legend: { labels: { color: '#999' } } }
+            }
+        });
+    </script>
+}

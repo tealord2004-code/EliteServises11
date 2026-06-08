@@ -1,0 +1,55 @@
+﻿@page
+@model EliteJobs.App.Pages.Chat.ListModel
+@{
+    ViewData["Title"] = "Мои чаты";
+}
+
+<div class="container mt-4">
+    <h2>Мои чаты</h2>
+
+    @if (!Model.Chats.Any())
+    {
+        <div class="alert alert-info">
+            У вас пока нет чатов.
+            @if (User.IsInRole("Worker"))
+            {
+                <span>Откликнитесь на вакансию, чтобы начать общение с работодателем.</span>
+            }
+            else if (User.IsInRole("Employer"))
+            {
+                <span>Чаты появятся, когда соискатели начнут с вами общение.</span>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="list-group">
+            @foreach (var chat in Model.Chats)
+            {
+                <a asp-page="/Chat/Index" asp-route-userId="@chat.OtherUserId"
+                   class="list-group-item list-group-item-action">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-1">@chat.OtherUserName</h5>
+                            @if (!string.IsNullOrEmpty(chat.OtherUserCompany))
+                            {
+                                <small class="text-muted">@chat.OtherUserCompany</small>
+                            }
+                            @if (!string.IsNullOrEmpty(chat.LastMessage))
+                            {
+                                <p class="mb-1 text-muted small">@chat.LastMessage</p>
+                            }
+                        </div>
+                        <div class="text-end">
+                            <small class="text-muted">@chat.LastMessageTime?.ToString("dd.MM.yyyy HH:mm")</small>
+                            @if (chat.UnreadCount > 0)
+                            {
+                                <span class="badge bg-danger rounded-pill ms-2">@chat.UnreadCount</span>
+                            }
+                        </div>
+                    </div>
+                </a>
+            }
+        </div>
+    }
+</div>

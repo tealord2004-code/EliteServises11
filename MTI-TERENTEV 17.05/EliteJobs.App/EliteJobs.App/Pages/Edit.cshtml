@@ -1,0 +1,91 @@
+﻿@page "{id:int}"
+@model EliteJobs.App.Pages.EditModel
+@{
+    ViewData["Title"] = "Редактировать услугу";
+}
+
+<div class="container mt-4">
+    <h2 style="color: var(--accent-gold); letter-spacing: 2px;">✦ РЕДАКТИРОВАТЬ УСЛУГУ</h2>
+    <hr style="border-color: var(--border);" />
+
+    <div class="row">
+        <div class="col-md-8">
+            <form method="post">
+                @Html.AntiForgeryToken()
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label class="form-label">Название *</label>
+                    <input asp-for="Input.Title" class="form-control" required />
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Категория</label>
+                        <select asp-for="Input.Category" class="form-select">
+                            <option value="">Выберите...</option>
+                            <option value="IT и разработка">IT и разработка</option>
+                            <option value="Строительство и ремонт">Строительство и ремонт</option>
+                            <option value="Образование">Образование</option>
+                            <option value="Дизайн и творчество">Дизайн и творчество</option>
+                            <option value="Красота и здоровье">Красота и здоровье</option>
+                            <option value="Транспорт">Транспорт</option>
+                            <option value="Юридические услуги">Юридические услуги</option>
+                            <option value="Другое">Другое</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Тип исполнителя</label>
+                        <select asp-for="Input.ProviderType" class="form-select">
+                            <option value="Физ. лицо">Физическое лицо</option>
+                            <option value="Юр. лицо">Юридическое лицо</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Имя / Название</label>
+                    <input asp-for="Input.ProviderName" class="form-control" />
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Город</label>
+                        <input asp-for="Input.City" class="form-control" />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Цена</label>
+                        <input asp-for="Input.Price" class="form-control" />
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Контакты</label>
+                    <input asp-for="Input.Contacts" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Описание</label>
+                    <textarea asp-for="Input.Description" class="form-control" rows="5"></textarea>
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input asp-for="Input.IsActive" class="form-check-input" />
+                    <label class="form-check-label">Активна</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">✦ Сохранить</button>
+                <a asp-page="Details" asp-route-id="@Model.Id" class="btn btn-secondary">Отмена</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/autocomplete.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initCityAutocomplete('input[name="Input.City"]');
+        });
+    </script>
+}

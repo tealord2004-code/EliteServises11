@@ -1,0 +1,143 @@
+﻿@page "{id:int}"
+@model EliteJobs.App.Pages.DetailsModel
+@{
+    ViewData["Title"] = Model.Service?.Title ?? "Service";
+}
+
+<div class="container mt-4">
+    @if (Model.Service == null)
+    {
+        <div class="alert alert-warning">
+            <h4>Service not found</h4>
+            <a asp-page="Index" class="btn btn-primary mt-2">← Back to list</a>
+        </div>
+    }
+    else
+    {
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-page="Index">Services</a></li>
+                <li class="breadcrumb-item active">@Model.Service.Title</li>
+            </ol>
+        </nav>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card mb-4" style="border: 1px solid var(--border-light);">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div>
+                                <h1 style="font-size: 2rem; font-weight: 300; letter-spacing: 2px;">@Model.Service.Title</h1>
+                                @if (!string.IsNullOrEmpty(Model.Service.Category))
+                                {
+                                    <span class="badge" style="background: var(--bg-card-hover); color: var(--text-secondary);">@Model.Service.Category</span>
+                                }
+                            </div>
+                            <span class="badge" style="background: var(--accent);">@Model.Service.ProviderType</span>
+                        </div>
+
+                        <hr style="border-color: var(--border);" />
+
+                        @if (!string.IsNullOrEmpty(Model.Service.Description))
+                        {
+                            <h5 style="color: var(--accent-gold); text-transform: uppercase; letter-spacing: 1px;">Description</h5>
+                            <p style="white-space: pre-line; color: var(--text-secondary); line-height: 1.7;">@Model.Service.Description</p>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <!-- Provider Card -->
+                <div class="card mb-3" style="border: 1px solid var(--border-light);">
+                    <div class="card-body p-4">
+                        <h5 style="color: var(--accent-gold); margin-bottom: 1rem;">Provider</h5>
+
+                        @if (!string.IsNullOrEmpty(Model.Service.ProviderId))
+                        {
+                            <a asp-page="/Profile/Worker" asp-route-id="@Model.Service.ProviderId"
+                               style="text-decoration: none;">
+                                <h4 style="color: var(--text-primary);">@Model.Service.ProviderName</h4>
+                            </a>
+                        }
+                        else
+                        {
+                            <h4 style="color: var(--text-primary);">@Model.Service.ProviderName</h4>
+                        }
+
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            @Model.Service.ProviderType
+                        </p>
+
+                        @if (!string.IsNullOrEmpty(Model.Service.ProviderId))
+                        {
+                            <a asp-page="/Profile/Worker" asp-route-id="@Model.Service.ProviderId"
+                               class="btn btn-outline-primary btn-sm w-100 mb-2">
+                                View Profile
+                            </a>
+                        }
+
+                        @if (!string.IsNullOrEmpty(Model.Service.Price))
+                        {
+                            <div class="my-3">
+                                <span class="price-tag">@Model.Service.Price</span>
+                            </div>
+                        }
+
+                        @if (!string.IsNullOrEmpty(Model.Service.City))
+                        {
+                            <p style="color: var(--text-muted);">📍 @Model.Service.City</p>
+                        }
+
+                        @if (!string.IsNullOrEmpty(Model.Service.Contacts))
+                        {
+                            <p style="color: var(--text-secondary);">📞 @Model.Service.Contacts</p>
+                        }
+                        @if (Model.IsOwner || User.IsInRole("Admin"))
+                        {
+                            <a asp-page="/Edit" asp-route-id="@Model.Service!.Id" class="btn btn-outline-primary">✏️ Редактировать</a>
+                            <a asp-page="/Employer/Applications" asp-route-serviceId="@Model.Service.Id" class="btn btn-info">Заказы (@Model.OrderCount)</a>
+                        }
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="d-grid gap-2">
+                    <a asp-page="Index" class="btn btn-secondary">← Back</a>
+
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        if (Model.IsOwner)
+                        {
+                            <a asp-page="/Employer/Applications" asp-route-serviceId="@Model.Service!.Id" class="btn btn-info">
+                                Orders (@Model.OrderCount)
+                            </a>
+                        }
+                        else if (!string.IsNullOrEmpty(Model.Service?.ProviderId))
+                        {
+                            <div class="d-flex gap-2">
+                                @if (Model.AlreadyOrdered)
+                                {
+                                    <a asp-page="/Chat/List" class="btn btn-outline-primary flex-fill">Chats</a>
+                                }
+                                else
+                                {
+                                    <a asp-page="/Worker/Apply" asp-route-serviceId="@Model.Service.Id" class="btn btn-primary flex-fill">
+                                        ✦ Order
+                                    </a>
+                                }
+                                <a asp-page="/Chat/Index" asp-route-userId="@Model.Service.ProviderId" class="btn btn-outline-primary flex-fill">
+                                    💬 Chat
+                                </a>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <a asp-page="/Account/Login" class="btn btn-primary">Sign in to order</a>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>

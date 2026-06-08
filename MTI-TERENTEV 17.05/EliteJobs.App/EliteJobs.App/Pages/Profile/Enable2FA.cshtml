@@ -1,0 +1,43 @@
+﻿@page
+@model EliteJobs.App.Pages.Profile.Enable2FAModel
+@{
+    ViewData["Title"] = "Two-Factor Authentication";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card" style="border: 1px solid var(--accent);">
+                <div class="card-header text-center">
+                    <h3 style="color: var(--accent-gold);">2FA SETUP</h3>
+                </div>
+                <div class="card-body text-center">
+                    @if (Model.Is2FAEnabled)
+                    {
+                        <p style="color: #00cc66;">2FA is enabled</p>
+                        <form method="post" asp-page-handler="Disable">
+                            @Html.AntiForgeryToken()
+                            <button class="btn btn-danger">Disable 2FA</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <p>Scan with Google Authenticator:</p>
+                        <div style="background: white; padding: 20px; display: inline-block; margin: 20px;">
+                            <canvas id="qrCanvas" width="200" height="200"></canvas>
+                        </div>
+                        <p style="color: var(--accent-gold); word-break: break-all;">Key: @Model.ManualKey</p>
+
+                        <form method="post" asp-page-handler="Enable">
+                            @Html.AntiForgeryToken()
+                            <div class="mb-3">
+                                <input name="code" class="form-control text-center" maxlength="6" placeholder="000000" />
+                            </div>
+                            <button class="btn btn-primary">Verify & Enable</button>
+                        </form>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

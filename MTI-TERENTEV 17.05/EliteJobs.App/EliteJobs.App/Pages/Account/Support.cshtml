@@ -1,0 +1,48 @@
+﻿@page
+@model EliteJobs.App.Pages.Account.SupportModel
+@{
+    ViewData["Title"] = "Поддержка";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card" style="border: 1px solid var(--accent);">
+                <div class="card-header text-center">
+                    <h3 style="color: var(--accent-gold);">ПОДДЕРЖКА</h3>
+                </div>
+                <div class="card-body">
+                    @if (Model.Sent)
+                    {
+                        <div class="alert alert-success">Сообщение отправлено! Администратор ответит вам.</div>
+                    }
+                    else
+                    {
+                        <form method="post">
+                            @Html.AntiForgeryToken()
+                            <div class="mb-3">
+                                <label class="form-label">Тема</label>
+                                <select name="subject" class="form-select">
+                                    <option value="Жалоба на услугу">Жалоба на услугу</option>
+                                    <option value="Жалоба на пользователя">Жалоба на пользователя</option>
+                                    <option value="Разблокировка аккаунта">Разблокировка аккаунта</option>
+                                    <option value="Техническая проблема">Техническая проблема</option>
+                                    <option value="Другое">Другое</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Описание</label>
+                                <textarea name="message" class="form-control" rows="5" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">ID услуги (если жалоба на услугу)</label>
+                                <input name="serviceId" class="form-control" type="number" />
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Отправить</button>
+                        </form>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

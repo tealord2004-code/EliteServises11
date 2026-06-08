@@ -1,0 +1,177 @@
+﻿@page
+@model EliteJobs.App.Pages.Admin.IndexModel
+@using EliteJobs.App.Models
+@{
+    ViewData["Title"] = "Admin Panel";
+}
+
+<div class="container mt-4">
+    <h2 style="color: var(--accent-gold); letter-spacing: 3px;">ADMIN PANEL</h2>
+
+    <ul class="nav nav-tabs mb-4" id="adminTabs">
+        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#users">Users</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#subs">Subscriptions</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#support">Support Chats</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#payments">Payments</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <!-- Payments -->
+        <div class="tab-pane fade" id="payments">
+            <table class="table table-sm">
+                <thead>
+                    <tr><th>User</th><th>Plan</th><th>Amount</th><th>Method</th><th>Details</th><th>Date</th><th>Actions</th></tr>
+                </thead>
+                <tbody>
+                    @foreach (var p in Model.Payments)
+                    {
+                        <tr>
+                            <td>@p.UserName</td>
+                            <td><span class="badge" style="background:var(--accent);">@p.TierDisplay</span></td>
+                            <td>@p.Amount ₽</td>
+                            <td>@p.PaymentMethod</td>
+                            <td><small style="color:#999;">@p.PaymentDetails</small></td>
+                            <td>@p.CreatedAt.ToString("dd.MM HH:mm")</td>
+                            <td>
+                                @if (p.Status == "Pending")
+                                {
+                                    <form method="post" asp-page-handler="ConfirmPayment" class="d-inline">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="paymentId" value="@p.Id" />
+                                        <button class="btn btn-sm btn-success">✓ Confirm</button>
+                                    </form>
+                                    <form method="post" asp-page-handler="RejectPayment" class="d-inline">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="paymentId" value="@p.Id" />
+                                        <button class="btn btn-sm btn-danger">✕ Reject</button>
+                                    </form>
+                                }
+                                else
+                                {
+                                    <span class="badge @(p.Status == "Confirmed" ? "bg-success" : "bg-danger")">
+                                        @p.Status
+                                    </span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <!-- Users -->
+        <div class="tab-pane fade show active" id="users">
+            <table class="table table-sm">
+                <thead>
+                    <tr><th>ID</th><th>Name</th><th>Email</th><th>Roles</th><th>Status</th><th>Actions</th></tr>
+                </thead>
+                <tbody>
+                    @foreach (var u in Model.Users)
+                    {
+                        <tr>
+                            <td style="font-size:0.7rem;color:#666;">@u.Id.Substring(0, 8)...</td>
+                            <td>@u.FirstName @u.LastName</td>
+                            <td>@u.Email</td>
+                            <td>
+                                @foreach (var r in u.Roles)
+                                {
+                                    <span class="badge" style="background:var(--accent);font-size:0.7rem;">@r</span>
+                                }
+                            </td>
+                            <td>
+                                <span class="badge @(u.IsActive ? "bg-success" : "bg-danger")">
+                                    @(u.IsActive ? "Active" : "Banned")
+                                </span>
+                            </td>
+                            <td>
+                                <form method="post" asp-page-handler="ToggleBan" class="d-inline">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="userId" value="@u.Id" />
+                                    <button class="btn btn-sm @(u.IsActive ? "btn-danger" : "btn-success")">
+                                        @(u.IsActive ? "Ban" : "Unban")
+                                    </button>
+                                </form>
+                                <form method="post" asp-page-handler="DeleteUser" class="d-inline" onsubmit="return confirm('Delete user @u.Email?')">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="userId" value="@u.Id" />
+                                    <button class="btn btn-sm btn-outline-danger">✕</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Services -->
+        <div class="tab-pane fade" id="services">
+            <table class="table table-sm">
+                <thead>
+                    <tr><th>ID</th><th>Title</th><th>Provider</th><th>Date</th><th>Action</th></tr>
+                </thead>
+                <tbody>
+                    @foreach (var s in Model.AllServices)
+                    {
+                        <tr>
+                            <td>@s.Id</td>
+                            <td><a asp-page="/Details" asp-route-id="@s.Id">@s.Title</a></td>
+                            <td>@s.ProviderName</td>
+                            <td>@s.PostedDate.ToString("dd.MM")</td>
+                            <td>
+                                <form method="post" asp-page-handler="DeleteService" class="d-inline" onsubmit="return confirm('Delete @s.Title?')">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="serviceId" value="@s.Id" />
+                                    <button class="btn btn-sm btn-danger">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Subscriptions -->
+        <div class="tab-pane fade" id="subs">
+            <table class="table table-sm">
+                <thead>
+                    <tr><th>User</th><th>Tier</th><th>Services</th><th>Expires</th><th>Action</th></tr>
+                </thead>
+                <tbody>
+                    @foreach (var sub in Model.Subscriptions)
+                    {
+                        <tr>
+                            <td>@sub.UserName</td>
+                            <td><span class="badge" style="background:var(--accent);">@sub.TierDisplay</span></td>
+                            <td>@sub.ServicesUsed / @SubscriptionLimits.MaxServices(sub.TierEnum)</td>
+                            <td>@(sub.ExpiryDate?.ToString("dd.MM.yyyy") ?? "∞")</td>
+                            <td>
+                                <form method="post" asp-page-handler="SetSubscription" class="d-flex gap-1">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="userId" value="@sub.UserId" />
+                                    <select name="tier" class="form-select form-select-sm" style="width:100px;">
+                                        <option value="Free">Free</option>
+                                        <option value="Pro">Pro</option>
+                                        <option value="Business">Business</option>
+                                        <option value="Premium">Premium</option>
+                                    </select>
+                                    <button class="btn btn-sm btn-primary">Set</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Support Chats -->
+        <div class="tab-pane fade" id="support">
+            <p class="text-muted">Click to open chat with user:</p>
+            @foreach (var u in Model.Users.Where(u => !u.Roles.Contains("Admin")))
+            {
+                <a asp-page="/Chat/Index" asp-route-userId="@u.Id" class="btn btn-outline-primary btn-sm me-2 mb-2">
+                    💬 @u.FirstName @u.LastName
+                </a>
+            }
+        </div>
+    </div>
+</div>

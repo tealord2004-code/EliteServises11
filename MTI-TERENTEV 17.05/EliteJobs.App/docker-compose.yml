@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: elite_db_net8
+    environment:
+      POSTGRES_USER: eliteuser
+      POSTGRES_PASSWORD: elitepass
+      POSTGRES_DB: EliteJobsDb
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata_net8:/var/lib/postgresql/data
+    networks:
+      - elite-network-net8
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U eliteuser"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build:
+      context: .
+      dockerfile: EliteJobs.App/Dockerfile
+    container_name: elite_app_net8
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=EliteJobsDb;Username=eliteuser;Password=elitepass
+      - ASPNETCORE_URLS=http://+:80
+    ports:
+      - "8080:80"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - elite-network-net8
+
+networks:
+  elite-network-net8:
+    driver: bridge
+
+volumes:
+  pgdata_net8:

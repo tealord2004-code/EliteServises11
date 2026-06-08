@@ -1,0 +1,149 @@
+﻿@page
+@model EliteJobs.App.Pages.Profile.UpgradeModel
+@using EliteJobs.App.Models
+@{
+    ViewData["Title"] = "Тариф";
+}
+
+<div class="container mt-5">
+    <h1 style="color: var(--accent-gold); text-align: center; letter-spacing: 3px;">ВЫБОР ТАРИФА</h1>
+    <p style="text-align: center; color: var(--text-secondary);">@Model.Message</p>
+
+    <div class="row mt-4 justify-content-center">
+        @foreach (var plan in Model.Plans)
+        {
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 @(plan.IsCurrent ? "border-danger" : "")"
+                     style="border: 2px solid @(plan.IsCurrent ? "#8b0000" : "#1a1a1a");">
+                    <div class="card-header text-center">
+                        <h4>@plan.Name</h4>
+                    </div>
+                    <div class="card-body text-center">
+                        <h2 style="color: var(--accent-gold);">@plan.Price ₽</h2>
+                        <p style="color: var(--text-secondary);">/месяц</p>
+                        <hr style="border-color: var(--border);" />
+                        <p>✦ @plan.MaxServices услуг</p>
+                        <p>✦ @plan.MaxPromotions продвижений</p>
+
+                        @if (plan.IsCurrent)
+                        {
+                            <button class="btn btn-outline-light w-100" disabled>Текущий тариф</button>
+                        }
+                        else if (plan.Tier == "Free")
+                        {
+                            <form method="post" asp-page-handler="Upgrade">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="tier" value="@plan.Tier" />
+                                <button class="btn btn-secondary w-100">Бесплатно</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#paymentModal"
+                                    onclick="setPayment('@plan.Tier', @plan.Price, '@plan.Name')">
+                                ✦ Выбрать @plan.Name
+                            </button>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- История платежей -->
+    <div class="card mt-5" style="border: 1px solid var(--border-light);">
+        <div class="card-header"><h5>История платежей</h5></div>
+        <div class="card-body">
+            @if (!Model.PaymentHistory.Any())
+            {
+                <p class="text-muted">Нет запросов на оплату.</p>
+            }
+            else
+            {
+                <table class="table table-sm">
+                    <thead>
+                        <tr><th>Дата</th><th>Тариф</th><th>Сумма</th><th>Статус</th></tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var p in Model.PaymentHistory)
+                        {
+                            <tr>
+                                <td>@p.CreatedAt.ToString("dd.MM.yyyy")</td>
+                                <td>@p.TierDisplay</td>
+                                <td>@p.Amount ₽</td>
+                                <td>
+                                    <span class="badge @(p.Status == "Подтверждён" ? "bg-success" : p.Status == "Отклонён" ? "bg-danger" : "bg-warning")">
+                                        @p.Status
+                                    </span>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно оплаты -->
+<div class="modal fade" id="paymentModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content" style="background: #141414; border: 1px solid var(--accent);">
+            <div class="modal-header" style="border-bottom: 1px solid var(--border);">
+                <h5 style="color: var(--accent-gold);">Запрос на оплату</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form method="post" asp-page-handler="RequestPayment">
+                @Html.AntiForgeryToken()
+                <div class="modal-body">
+                    <p>Тариф: <strong id="modalPlanName" style="color: var(--accent-gold);">Pro</strong></p>
+                    <p>Сумма: <strong id="modalAmount" style="color: var(--accent-green);">500 ₽</strong></p>
+                    <input type="hidden" name="tier" id="modalTier" value="Pro" />
+
+                    <hr style="border-color: var(--border);" />
+
+                    <div class="alert alert-info" style="font-size: 0.85rem;">
+                        <strong>Реквизиты для оплаты:</strong><br />
+                        💳 Карта Сбербанк: <strong>2200 2503 0026 1414</strong><br />
+                        Получатель: Александр С.
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Способ оплаты</label>
+                        <select name="paymentMethod" class="form-select" required>
+                            <option value="">Выберите...</option>
+                            <option value="Сбербанк">Перевод на Сбербанк</option>
+                            <option value="Тинькофф">Перевод на Тинькофф</option>
+                            <option value="Крипто">Криптовалюта (USDT)</option>
+                            <option value="Другое">Другое</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Детали платежа (для проверки)</label>
+                        <textarea name="paymentDetails" class="form-control" rows="2"
+                                  placeholder="Имя на карте, ID транзакции или адрес кошелька..."></textarea>
+                    </div>
+
+                    <div class="alert alert-warning" style="font-size: 0.8rem;">
+                        ⚠️ После оплаты администратор проверит платёж и активирует тариф.
+                    </div>
+                </div>
+                <div class="modal-footer" style="border-top: 1px solid var(--border);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <button type="submit" class="btn btn-primary">✦ Отправить запрос</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function setPayment(tier, amount, name) {
+            document.getElementById('modalTier').value = tier;
+            document.getElementById('modalAmount').textContent = amount + ' ₽';
+            document.getElementById('modalPlanName').textContent = name;
+        }
+    </script>
+}

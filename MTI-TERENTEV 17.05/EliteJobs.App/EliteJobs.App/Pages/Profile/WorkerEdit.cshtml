@@ -1,0 +1,113 @@
+﻿@page
+@model EliteJobs.App.Pages.Profile.WorkerEditModel
+@{
+    ViewData["Title"] = "Edit Profile";
+}
+
+<div class="container mt-4">
+    <h2 style="color: var(--accent-gold); letter-spacing: 2px;">EDIT PROFILE</h2>
+    <hr style="border-color: var(--border);" />
+
+    <div class="row">
+        <div class="col-md-8">
+            <form method="post">
+                @Html.AntiForgeryToken()
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+                <div class="card mb-4" style="border: 1px solid var(--border-light);">
+                    <div class="card-header"><h5>Personal Info</h5></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">First Name *</label>
+                                <input asp-for="Input.FirstName" class="form-control" required />
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Last Name *</label>
+                                <input asp-for="Input.LastName" class="form-control" required />
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Middle Name</label>
+                                <input asp-for="Input.MiddleName" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Phone</label>
+                                <input asp-for="Input.PhoneNumber" class="form-control" type="tel" />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">City</label>
+                                <input asp-for="Input.City" class="form-control" data-city-input="true" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4" style="border: 1px solid var(--border-light);">
+                    <div class="card-header"><h5>Additional Info</h5></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Birth Date</label>
+                                <input asp-for="Input.BirthDate" type="date" class="form-control" />
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Gender</label>
+                                <select asp-for="Input.Gender" class="form-select">
+                                    <option value="">Select...</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Marital Status</label>
+                                <select asp-for="Input.MaritalStatus" class="form-select">
+                                    <option value="">Select...</option>
+                                    <option value="Single">Single</option>
+                                    <option value="Married">Married</option>
+                                    <option value="Divorced">Divorced</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Citizenship</label>
+                                <input asp-for="Input.Citizenship" class="form-control" placeholder="Russia" />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">About</label>
+                                <textarea asp-for="Input.About" class="form-control" rows="2" maxlength="1000"
+                                          placeholder="Short description about yourself or your company..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">✦ SAVE</button>
+                <a asp-page="/Profile/Worker" class="btn btn-secondary">Cancel</a>
+            </form>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card" style="border: 1px solid var(--border-light);">
+                <div class="card-header"><h5>Roles</h5></div>
+                <div class="card-body">
+                    <p style="color: var(--text-secondary);">Your profile is visible to other users.</p>
+                    <p style="color: var(--accent-gold);">Complete all fields to unlock features.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/autocomplete.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initCityAutocomplete('input[name="Input.City"]');
+        });
+    </script>
+}

@@ -1,0 +1,122 @@
+﻿@page
+@model IndexModel
+@using Microsoft.AspNetCore.Identity
+@using EliteJobs.App.Models
+@inject SignInManager<ApplicationUser> SignInManager
+@{
+    ViewData["Title"] = "Услуги";
+}
+
+<div class="container mt-4">
+    <div class="text-center mb-5">
+        <h1 class="display-4" style="font-weight: 200; letter-spacing: 4px;">ELITE SERVICES</h1>
+        <p style="color: var(--text-muted);">Профессиональные услуги</p>
+    </div>
+
+    <!-- Поиск -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <form method="get" class="row g-3">
+                <div class="col-md-3">
+                    <input name="search" class="form-control" value="@Model.Search" placeholder="Поиск..." />
+                </div>
+                <div class="col-md-2">
+                    <input name="city" class="form-control" value="@Model.City" placeholder="Город" data-city-input="true" />
+                </div>
+                <div class="col-md-2">
+                    <select name="category" class="form-select">
+                        <option value="">Все категории</option>
+                        <option value="IT и разработка">IT и разработка</option>
+                        <option value="Строительство и ремонт">Строительство и ремонт</option>
+                        <option value="Образование">Образование</option>
+                        <option value="Дизайн и творчество">Дизайн и творчество</option>
+                        <option value="Красота и здоровье">Красота и здоровье</option>
+                        <option value="Транспорт">Транспорт</option>
+                        <option value="Юридические услуги">Юридические услуги</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <select name="providerType" class="form-select">
+                        <option value="">Все исполнители</option>
+                        <option value="Физ. лицо">Физ. лица</option>
+                        <option value="Юр. лицо">Юр. лица</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <select name="sort" class="form-select">
+                        <option value="newest">Новые</option>
+                        <option value="cheapest">Дешёвые</option>
+                        <option value="expensive">Дорогие</option>
+                    </select>
+                </div>
+                <div class="col-md-1">
+                    <button type="submit" class="btn btn-primary w-100">Поиск</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Рекомендации -->
+    @if (Model.Recommended.Any())
+    {
+        <h4 style="color: var(--accent-gold);">Рекомендуем вам</h4>
+        <div class="row mb-4">
+            @foreach (var s in Model.Recommended)
+            {
+                <div class="col-md-3 mb-3">
+                    <div class="card h-100" style="border-left: 3px solid var(--accent);">
+                        <div class="card-body">
+                            <h6><a asp-page="Details" asp-route-id="@s.Id">@s.Title</a></h6>
+                            <span class="price-tag" style="font-size:0.8rem; padding:4px 8px;">@s.Price</span>
+                            <small class="d-block text-muted">@s.City</small>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+
+    <p style="color: var(--text-muted);">Найдено: @Model.Services.Count</p>
+
+    @if (!Model.Services.Any())
+    {
+        <div class="text-center py-5">
+            <p style="color: var(--text-muted);">Ничего не найдено</p>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var s in Model.Services)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="badge" style="background:var(--accent);">@s.ProviderType</span>
+                            @if (!string.IsNullOrEmpty(s.Category))
+                            {
+                                <span class="badge bg-secondary">@s.Category</span>
+                            }
+                            <h5 class="mt-2"><a asp-page="Details" asp-route-id="@s.Id">@s.Title</a></h5>
+                            <p style="color:var(--accent-gold);">@s.ProviderName</p>
+                            <span class="price-tag">@s.Price</span>
+                            <small class="d-block text-muted">📍 @s.City</small>
+                            <p class="mt-2" style="color:var(--text-secondary);font-size:0.9rem;">
+                                @(s.Description?.Length > 80 ? s.Description.Substring(0, 80) + "..." : s.Description)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script src="~/js/autocomplete.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initCityAutocomplete('input[name="city"]');
+        });
+    </script>
+}
